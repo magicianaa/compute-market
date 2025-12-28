@@ -75,4 +75,8 @@ public class TaskService {
     public void deleteTask(Long id) {
         taskRepository.deleteById(id);
     }
+    
+    public List<TaskEntity> getTasksByStatus(String status) {
+        return taskRepository.findByStatus(status);
+    }
 }
