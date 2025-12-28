@@ -1,6 +1,5 @@
 package com.blockchain.iExec.contract;
 
-import org.springframework.stereotype.Component;
 import org.web3j.protocol.Web3j;
 import org.web3j.protocol.core.RemoteCall;
 import org.web3j.protocol.core.methods.response.TransactionReceipt;
@@ -15,7 +14,10 @@ import java.math.BigInteger;
 import java.util.Collections;
 import java.util.List;
 
-@Component
+/**
+ * 智能合约封装类
+ * 注意：此类不应使用 @Component，而是通过工厂方法创建实例
+ */
 public class ComputeMarketContract extends Contract {
     
     // 智能合约 ABI

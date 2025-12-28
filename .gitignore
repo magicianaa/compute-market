@@ -1,0 +1,168 @@
+# ==========================================
+# iExec Compute Market 项目
+# ==========================================
+
+# ==========================================
+# 环境变量和敏感信息（最重要！）
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+**/.secrets/
+**/secrets/
+
+# ==========================================
+# iExec 工作目录
+# ==========================================
+iexec-workspace/
+.secrets/
+chain.json
+iexec.json
+deployed.json
+orders.json
+
+# ==========================================
+# 日志文件
+# ==========================================
+logs/
+*.log
+log/
+*.log.*
+
+# ==========================================
+# Node.js (前端和合约)
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+dist/
+dist-ssr/
+*.local
+
+# ==========================================
+# Maven (后端)
+# ==========================================
+target/
+.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# ==========================================
+# 测试和脚本文件
+# ==========================================
+*.ps1
+*.sh
+test-*.ps1
+quick-start.ps1
+setup-*.ps1
+run.ps1
+test-api.ps1
+
+# ==========================================
+# IDE 配置文件
+# ==========================================
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### VS Code ###
+.vscode/
+*.code-workspace
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# ==========================================
+# 操作系统文件
+# ==========================================
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+### Linux ###
+*~
+.directory
+.Trash-*
+
+# ==========================================
+# 数据库文件
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+h2/
+
+# ==========================================
+# 编译和构建产物
+# ==========================================
+build/
+dist/
+*.class
+*.jar
+!gradle/wrapper/gradle-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# ==========================================
+# 临时文件
+# ==========================================
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+.cache/
+*.pid
+*.seed
+*.pid.lock
+
+# ==========================================
+# 合约编译产物
+# ==========================================
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# ==========================================
+# 覆盖率报告
+# ==========================================
+coverage/
+*.lcov
+.nyc_output/
+
+# ==========================================
+# 其他
+# ==========================================
+.env.test
+.env.production
+*.orig
+*.rej
